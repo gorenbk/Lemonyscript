@@ -9,3 +9,5 @@ for line in code.splitlines():
     elif words[0] == 'wait':
         import time
         time.sleep(int(words[1]))
+    elif words[1] == '= answer':
+        words[0] = answer
